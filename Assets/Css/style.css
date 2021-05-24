@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+.text-white {
+    color: white;!important;
+}
+.hovermain:hover {
+    color: black!important;
+    background-color: #ccc!important;
+}
+
+#header{
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+#nav {
+    display: inline-block;
+}
+#nav,.subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+    position: relative;
+
+}
+
+#nav >  li > a {
+    color: white;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#nav li a {
+
+    text-decoration: none;
+    padding: 0 24px;
+    width: 100%;
+    display: block;
+}
+#nav li:hover {
+    color: black!important;
+    background-color: #ccc!important;
+}
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #fff ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav .subnav a{
+    color: black;
+    line-height: 38px;
+    padding: 0 16px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+    position: absolute;
+}
+#mobile-menu {
+    display: none;
+}
+#header .menu-btn,
+#header .search-button {
+    float: right;
+    padding: 0 21px;
+}
+#header .menu-btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+#header .menu-btn:hover .menu-icon {
+    color: black;
+}
+
+#header .search-button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#header .menu-icon,
+#header .search-icon {
+    color: white;
+    font-size: 16px;
+    line-height: 46px;
+
+
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("https://www.w3schools.com/w3images/chicago.jpg") top center / cover no-repeat;
+    position: relative;
+
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    padding: 32px 16px;
+    /*left: 50%;
+    transform: translateX(-50%);*/
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content{
+
+}
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    line-height: 45px;
+
+}
+
+#content .section-subheading {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 60%;
+    font-style: italic;
+    line-height: 22px;
+}
+#content .about-text {
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+#content .about-member {
+    padding: 32px 0;
+}
+#content .member-info p {
+    font-size: 15px;
+    margin: 15px 0;
+
+
+}
+#content .member-info {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-img {
+    margin-bottom: 16px;
+    width: 60%;
+    border-radius: 4px;
+}
+
+#content #Tour {
+    background-color: black;
+}
+
+#content .tour-time {
+    background-color: white;
+    box-sizing: inherit;
+    color: black;
+    list-style-type: none;
+    margin-top: 40px;
+}
+.tour-time li {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+.tour-sold {
+    background-color: #f44336;
+    color: #fff;
+    padding: 0 8px;
+    margin-left: 16px;
+    text-align: center;
+}
+.tour-on {
+    background-color: #000;
+    color: #fff;
+    padding: 0 8px;
+    text-align: center;
+    border-radius: 50%;
+    float: right;
+    margin-right: 16px;
+
+}
+#content .Tour-place {
+
+    padding: 32px 8px;
+    margin: 0 -16px;
+    font-size: 15px;
+
+}
+
+#content .place-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+    margin-bottom: 16px;
+    box-sizing: inherit;
+
+}
+#content .place-item img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+#content .place-item img:hover {
+    opacity: 60%;
+}
+#content .place-info {
+    background-color: white;
+    color: black;
+    padding: 0.15px 16px;
+
+}
+
+#content .place-name {
+    margin: 15px 0;
+}
+#content .place-time {
+    margin: 15px 0;
+    opacity: 60%;
+}
+#content .place-text {
+    margin: 15px 0;
+    line-height: 1.4;
+}
+#content .place-btn {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+}
+#content .place-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+#ticket-Bill {
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    /*position: fixed;*/
+    overflow: auto;
+    z-index: 2;
+}
+#ticket-Bill .ticket-bill {
+    margin: 0 97px;
+}
+#ticket-Bill .ticket-heading {
+    background-color: rgb(0,150,136);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#content .contact-box{
+    padding: 32px 0;
+    font-size: 15px;
+    display: block;
+    line-height: 22.5px;
+
+}
+#content .contact-info {
+    /*display: block;*/
+    margin-bottom: 16px;
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    line-height: 1.5;
+}
+#content .contact-info i{
+    width: 30px;
+
+
+}
+
+#content .contact-form
+{
+    float: right;
+    width: 50%;
+
+}
+#content .input-info {
+    padding: 0 8px;
+    margin: 0 -16px 8px -16px;
+}
+
+#content .input-half {
+    float: left;
+    width: calc(100%/2);
+    padding: 0 8px;
+}
+
+#content .input-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#content .contact-form input {
+    width: 100%;
+}
+
+#content .input-btn {
+    background-color: black;
+    color: white;
+    margin: 16px 0;
+    padding: 8px 16px;
+    float: right;
+    border: none;
+    text-decoration: none;
+}
+#content .input-btn:hover {
+    cursor: pointer;
+    background-color: #757575;
+    color: black;
+}
+
+.location-img {
+    width: 100%;
+    filter: grayscale(50%);
+
+
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    opacity: 60%;
+}
+#footer i:hover {
+    color: black;
+    opacity: 40%;
+}
+#footer .author {
+    font-size: 15px;
+    margin: 15px 0;
+}
