@@ -1,0 +1,131 @@
+
+
+
+/* .course-list{
+
+}
+.course-result{
+
+} */
+
+/* .tuition .table li:last-child{
+    border-top: none;
+} */
+
+.tuition .tuition-sum{
+    position: absolute;
+    left: 58%;
+}
+.tuition .tuition-sum2{
+    position: absolute;
+    left: 35%;
+}
+.tuition-text{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.tuition-text strong{
+    font-size: 20px;
+}
+.tuition-text li {
+    margin-left: 15px;
+}
+.tuition-text .payment{
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+}
+
+
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+.service h1{
+    font-family: 'Raleway';
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+}
+.service-box{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+    
+}
+.card{
+    min-height: 220px;
+    width:320px;
+    padding: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 5px 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0 ,0.2);
+    transition: all .4 ease;
+}
+.card i{
+    font-size: 3em;
+    margin: 20px;
+    color: coral;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align:center;
+}
+.card p{
+    color: #6c757d;
+    text-align:center;
+}
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 500;
+}
+.card:nth-child(1):hover{
+    background:linear-gradient(45deg,
+                        rgba(255, 28, 8, .8) 0%,
+                        rgba(255, 0, 82, .8) 100%), url('../images/hoso.jpeg');
+    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background:linear-gradient(45deg,
+                        rgba(255, 28, 8, .8) 0%,
+                        rgba(255, 0, 82, .8) 100%), url('../images/baoluu.jpg');
+    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background:linear-gradient(45deg,
+                        rgba(255, 28, 8, .8) 0%,
+                        rgba(255, 0, 82, .8) 100%), url('../images/chuyennganh.jfif');
+    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background:linear-gradient(45deg,
+                        rgba(255, 28, 8, .8) 0%,
+                        rgba(255, 0, 82, .8) 100%), url('../images/hoanthi.jpg');
+    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background:linear-gradient(45deg,
+                        rgba(255, 28, 8, .8) 0%,
+                        rgba(255, 0, 82, .8) 100%), url('../images/hocphi.jpg');
+    background-size: cover;
+}
